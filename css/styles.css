@@ -1,0 +1,12 @@
+body {
+  background-color: gray;
+}
+
+.well {
+  background-color: beige;
+  width: 250px;
+}
+
+.panel {
+  width: 200px;
+}
