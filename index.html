@@ -9,28 +9,49 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="container well">Order Pizza</h1>
+      <h1 class="container well">*Order A Pizza</h1>
       <br>
       <div class="container well">
         <form id="run">
           <div class="container panel">
-            <p>Choose a topping:</p>
-            <input type="checkbox" name="topping" value="1"> Cheese
+            <h5>Choose your topping(s):</h5>
+            <select id="toppings1" class="form-control" name="toppings">
+              <option value="0">N/A</option>
+              <option value="1">Fresh Uncut Oranges</option>
+              <option value="10">Cheese</option>
+              <option value="1">Stale potatoes</option>
+            </select>
+            <br>
+            <select id="toppings2" class="form-control" name="toppings">
+              <option value="0">N/A</option>
+              <option value="1">Fresh Uncut Oranges</option>
+              <option value="10">Cheese</option>
+              <option value="1">Stale potatoes</option>
+            </select>
+            <br>
+            <select id="toppings3" class="form-control" name="toppings">
+              <option value="0">N/A</option>
+              <option value="1">Fresh Uncut Oranges</option>
+              <option value="10">Cheese</option>
+              <option value="1">Stale potatoes</option>
+            </select>
             <br>
           </div>
           <div class="container panel">
-          <p>Choose a size:</p>
-          <input type="checkbox" name="size" value="1"> Small
-          <br>
-          <input type="checkbox" name="size" value="2"> Large
-          <br>
+            <h5>Choose a size:</h5>
+            <select id="size" class="form-control" name="size">
+              <option value="0">---Select Size---</option>
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+            </select>
+            <br>
           </div>
-          <br>
-          <br>
           <button type="submit" class="button btn-success">Submit</button>
         </form>
         <h4>Price: <span id="result"></span></h4>
       </div>
+      <footer class="middle">*Limit of one pizza per order*</footer>
     </div>
   </body>
 </html>
